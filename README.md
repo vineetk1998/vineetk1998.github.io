@@ -2,7 +2,7 @@
 **Senior Software Engineer | Technical Leader | System Architect**
 
 [LinkedIn: vineetkch](https://www.linkedin.com/in/vineetkch) | [GitHub: vineetk1998](https://github.com/vineetk1998)  
-03vineet03@gmail.com | +91 9****-*0809
+vinetchoudhary@gmail.com | +91 94612-60809
 
 ## Professional Summary
 Results-driven software architect with 5+ years of experience designing and implementing scalable, high-performing systems that solve complex business challenges. Led cross-functional engineering initiatives that reduced booking failures by 95% and improved platform reliability by 35%. Expertise in designing distributed systems, implementing observability solutions, and optimizing system performance while mentoring junior engineers and driving best practices across teams.
