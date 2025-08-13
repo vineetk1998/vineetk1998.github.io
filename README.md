@@ -17,12 +17,12 @@ Results-driven software architect with 5+ years of experience architecting and i
 ## Professional Experience
 
 ### Senior Software Engineer, myHQ
-*April 2022 - Present*
+*April 2022 - July 2025*
 
 #### Technical Leadership & System Architecture
 * **Architected the technical vision** for a unified booking platform, enabling seamless integration with 20+ vendor systems and scaling to process 50,000+ monthly transactions. Implemented proactive health monitoring and automated recovery mechanisms, delivering a 95% reduction in booking failures and measurable improvement in customer satisfaction scores.
 * **Spearheaded platform-wide optimization initiatives** by redesigning the listing, payments, and inventory subsystems—implementing geospatial search algorithms, real-time capacity management, and advanced availability optimization. These architectural enhancements established new performance benchmarks, achieving 40% faster search response times and improving operational efficiency across the organization.
-* **Established cross-service architectural standards** for data access patterns, caching strategies, and rate limiting policies, driving adoption across 12+ microservices and elevating system consistency by 60% while reducing technical debt.
+* **Established cross-service architectural standards** for data access patterns, caching strategies, and rate limiting policies, driving adoption across 12+ service modules and elevating system consistency by 60% while reducing technical debt.
 
 #### Infrastructure & DevOps Excellence
 * **Pioneered zero-downtime deployment practices** by designing robust CI/CD pipelines with automated rollback capabilities and graceful shutdown procedures, enabling daily releases with 99.99% reliability and reducing deployment-related incidents by 60%.
