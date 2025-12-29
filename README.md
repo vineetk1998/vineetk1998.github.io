@@ -42,7 +42,7 @@ Results-driven software architect with 5+ years of experience designing and impl
 
 ### Lead Software Engineer, Cuebook
 *Apr 2021 – Mar 2022*
-* Led a 4-person engineering team for the open-source release of CueObserve, a time-series anomaly detection product for SQL databases, achieving 1,000+ GitHub stars.
+* Led a 4-person engineering team for the open-source release of CueObserve, a time-series anomaly detection product for SQL databases, achieving 200+ GitHub stars.
 * Designed and implemented a robust cloud engineering system for automated scaling, improving maintainability by 2 grades and reducing operational overhead by 40%.
 * Built CI/CD pipelines with GitHub Actions, increasing automated test coverage by 60% and reducing deployment time by 50%.
 * Architected high-performance ELT pipelines using Spark interpreter with Iceberg/Delta Table formats in Zeppelin notebooks, processing 10M+ records daily.
