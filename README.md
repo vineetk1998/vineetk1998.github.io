@@ -88,5 +88,5 @@ Bachelor of Technology (B.Tech), Information Technology
 
 ## Awards & Achievements
 * Technical Excellence Award at myHQ for implementing system health check service (2023)
-* Published paper in ICACCT (2019)
+* [Published paper in ICACC](https://www.researchgate.net/publication/344001218_Ensuring_Food_Safety_Through_Blockchain) (2019)
 * Idea accepted in National Innovation Foundation (2013)
