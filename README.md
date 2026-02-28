@@ -20,9 +20,9 @@ Results-driven software architect with 5+ years of experience designing and impl
 *Apr 2022 – Jul 2025*
 
 #### Technical Leadership & System Architecture
-* Architected a unified booking platform integrating 20+ vendor systems, scaling to 50,000+ monthly transactions. Implemented proactive health monitoring and automated recovery - reducing booking failures by 95% and improving customer satisfaction scores.
-* Redesigned listing, payments, and inventory subsystems. Introducing geospatial search algorithms, real-time capacity management, and advanced availability optimization - achieving 40% faster search response times and boosting operational efficiency.
-* Standardized data access patterns, caching strategies, and rate-limiting policies across 12+ independently deployed services - improving system consistency by 60% and reducing technical debt.
+* Architected a unified booking platform integrating 20+ vendor systems, scaling to 50,000+ monthly transactions. Implemented proactive health monitoring and automated recovery—reducing booking failures by 95% and improving customer satisfaction scores.
+* Redesigned listing, payments, and inventory subsystems. Introducing geospatial search algorithms, real-time capacity management, and advanced availability optimization—achieving 40% faster search response times and boosting operational efficiency.
+* Standardized data access patterns, caching strategies, and rate-limiting policies across 12+ independently deployed services—improving system consistency by 60% and reducing technical debt.
 
 #### Infrastructure & DevOps Excellence
 * Pioneered zero-downtime deployment via CI/CD pipelines with automated rollback and graceful shutdowns, enabling daily releases at 99.99% reliability and reducing deployment-related incidents by 60%.
