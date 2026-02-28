@@ -25,9 +25,9 @@ Results-driven software architect with 5+ years of experience designing and impl
 * Standardized data access patterns, caching strategies, and rate-limiting policies across 12+ independently deployed services—improving system consistency by 60% and reducing technical debt.
 
 #### Infrastructure & DevOps Excellence
-* Pioneered zero-downtime deployment via CI/CD pipelines with automated rollback and graceful shutdowns, enabling daily releases at 99.99% reliability and reducing deployment-related incidents by 60%.
+* Pioneered zero-downtime deployment via CI/CD pipelines with automated rollback and graceful shutdowns—enabling daily releases at 99.99% reliability and reducing deployment-related incidents by 60%.
 * Enhanced observability by integrating Elastic APM, external service health checks, and real-time dashboards—cutting production issue resolution time by 30% and enabling proactive bottleneck detection.
-* Architected resilient, compliant data infrastructure with multi-region MongoDB replica sets, Point-in-Time Recovery (PITR), and automated backup/restore processes, ensuring 99.9% data availability.
+* Architected resilient, compliant data infrastructure with multi-region MongoDB replica sets, Point-in-Time Recovery (PITR), and automated backup/restore processes—ensuring 99.9% data availability.
 
 #### Security & Compliance Systems
 * Unified security posture by implementing CASL-based authorization, enforcing end-to-end encryption, integrating AWS secrets management, establishing RBAC policies, and automating patching—achieving a 99.8% compliance score and reducing vulnerabilities by 90%.
