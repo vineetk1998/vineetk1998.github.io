@@ -46,6 +46,7 @@ Results-driven software architect with 5+ years of experience designing and impl
 * Designed and implemented a robust cloud engineering system for automated scaling, improving maintainability by 2 grades and reducing operational overhead by 40%.
 * Built CI/CD pipelines with GitHub Actions, increasing automated test coverage by 60% and reducing deployment time by 50%.
 * Contributed to Spark based ELT pipelines over Apache Iceberg, enabling scalable lakehouse ingestion and transformation of 10M+ records/day via Zeppelin driven workflows.
+
 ---
 
 ### Founding Software Engineer, Cuebook
