@@ -16,41 +16,40 @@ Results-driven software architect with 5+ years of experience designing and impl
 
 ## Professional Experience
 
-### Senior Software Engineer, myHQ
-*Apr 2022 – Jul 2025*
+### myHQ
 
-#### Technical Leadership & System Architecture
+#### Senior Software Engineer <span style="float:right; font-weight:normal; font-style:italic">Apr 2022 – Jul 2025</span>
+
+##### Technical Leadership & System Architecture
 * Architected a unified booking platform integrating 20+ vendor systems, scaling to 50,000+ monthly transactions. Implemented proactive health monitoring and automated recovery—reducing booking failures by 95% and improving customer satisfaction scores.
 * Redesigned listing, payments, and inventory subsystems. Introducing geospatial search algorithms, real-time capacity management, and advanced availability optimization—achieving 40% faster search response times and boosting operational efficiency.
 * Standardized data access patterns, caching strategies, and rate-limiting policies across 12+ independently deployed services—improving system consistency by 60% and reducing technical debt.
 
-#### Infrastructure & DevOps Excellence
+##### Infrastructure & DevOps Excellence
 * Pioneered zero-downtime deployment via CI/CD pipelines with automated rollback and graceful shutdowns—enabling daily releases at 99.99% reliability and reducing deployment-related incidents by 60%.
 * Enhanced observability by integrating Elastic APM, external service health checks, and real-time dashboards—cutting production issue resolution time by 30% and enabling proactive bottleneck detection.
 * Architected resilient, compliant data infrastructure with multi-region MongoDB replica sets, Point-in-Time Recovery (PITR), and automated backup/restore processes—ensuring 99.9% data availability.
 
-#### Security & Compliance Systems
+##### Security & Compliance Systems
 * Unified security posture by implementing CASL-based authorization, enforcing end-to-end encryption, integrating AWS secrets management, establishing RBAC policies, and automating patching—achieving a 99.8% compliance score and reducing vulnerabilities by 90%.
 * Implemented nginx SSL termination to enforce secure, scalable service delivery.
 * Redesigned auditability and privacy systems with centralized audit logging and automated PII scrubbing—enabling 4x faster root cause analysis and ensuring compliance with evolving data privacy regulations.
 
-#### Engineering Culture & Mentorship
+##### Engineering Culture & Mentorship
 * Elevated engineering culture through code quality standards, architectural reviews, and mentorship of 5+ engineers—reducing production bugs by 25% and enabling 3 promotions to senior roles.
 * Fostered cross-functional collaboration, improving delivery velocity and technical alignment across teams.
 
 ---
 
-### Lead Software Engineer, Cuebook
-*Apr 2021 – Mar 2022*
+### Cuebook
+
+#### Lead Software Engineer <span style="float:right; font-weight:normal; font-style:italic">Apr 2021 – Mar 2022</span>
 * Led a 4-person engineering team for the open-source release of CueObserve, a time-series anomaly detection product for SQL databases, achieving 200+ GitHub stars.
 * Designed and implemented a robust cloud engineering system for automated scaling, improving maintainability by 2 grades and reducing operational overhead by 40%.
 * Built CI/CD pipelines with GitHub Actions, increasing automated test coverage by 60% and reducing deployment time by 50%.
 * Contributed to Spark based ELT pipelines over Apache Iceberg, enabling scalable lakehouse ingestion and transformation of 10M+ records/day via Zeppelin driven workflows.
 
----
-
-### Founding Software Engineer, Cuebook
-*Nov 2019 – Mar 2021*
+#### Founding Software Engineer <span style="float:right; font-weight:normal; font-style:italic">Nov 2019 – Mar 2021</span>
 * Designed innovative data query language (CueL) using multiple interdependent DAGs, reducing query complexity by 70% for end users.
 * Architected a parallel anomaly detection service using AWS Lambda across 100M+ factor combinations, achieving 95% accuracy in automated root cause analysis.
 * Implemented ElasticSearch & ranking algorithm based on user interaction patterns, metric importance, and configuration, improving search relevance by 80%.
@@ -58,8 +57,9 @@ Results-driven software architect with 5+ years of experience designing and impl
 
 ---
 
-### CEO, Alpha Tech StartUp
-*May 2019 – Oct 2019*
+### Alpha Tech StartUp
+
+#### Founder <span style="float:right; font-weight:normal; font-style:italic">May 2019 – Oct 2019</span>
 * Led end-to-end product development of a SaaS ERP for educational institutions, onboarding 2 institutions and 1,000+ students in 6 months.
 * Designed 7+ integrated scalable modules using ReactJS with Redux and Firebase, enabling real-time data sync.
 * Managed complete product lifecycle using Agile, delivering MVP 20% ahead of schedule.
