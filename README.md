@@ -8,8 +8,8 @@ vinetchoudhary@gmail.com | +91 90019-36749
 Results-driven software architect with 6+ years of experience designing and implementing scalable, high-performing distributed systems that solve complex business challenges. Led cross-functional engineering initiatives that reduced booking failures by 95% and enhanced platform reliability by 35%. Skilled in architecting service-based systems, implementing end-to-end observability, optimizing performance, and mentoring engineering teams while establishing best practices across organizations.
 
 ## Technical Skills
-**Languages & Frameworks:** JavaScript/TypeScript, Node.js, Python, React.js, Express.js, Django  
-**Infrastructure & Cloud:** AWS (EC2, Lambda, S3, EKS), Docker, Kubernetes, CI/CD (GitHub Actions), Serverless Architecture  
+**Languages & Frameworks:** JavaScript/TypeScript, Node.js, Python, React.js, Express.js, Django, LangChain, LangGraph  
+**Infrastructure & Cloud:** AWS (EC2, Lambda, S3, EKS, Bedrock, Polly), Docker, Kubernetes, CI/CD (GitHub Actions), Serverless Architecture  
 **Databases & Data:** MongoDB, PostgreSQL, Redis, ElasticSearch, Druid  
 **Monitoring & Observability:** Elastic APM, Prometheus, Grafana, Kibana  
 **Architecture:** Service-Oriented Architecture, Event-driven Architecture, Distributed Systems, RESTful APIs
@@ -74,12 +74,16 @@ Bachelor of Technology (B.Tech), Information Technology
 ---
 
 ## Projects & Open Source
-**CueObserve - Time-series Anomaly Detection**
+**AI Sales Training Platform** *(myHQ Hackathon)* <span style="float:right; font-weight:normal; font-style:italic">2025</span>
+* Led a team of 6, covering SOP ingestion, AWS Bedrock-driven course and quiz generation, a LangGraph-managed 4-stage buyer simulation (Discovery, Proposal, Objection Handling, Closing) driven by structured system prompts, and AWS Polly voice output.
+* Architected the production roadmap: LangChain RAG for scalable retrieval, a local XGBoost model with SHAP-derived feature importances injected as structured prompt context for company-specific conversion signals, and optional fine-tuning for end-user model personalisation.
+
+**CueObserve - Time-series Anomaly Detection** <span style="float:right; font-weight:normal; font-style:italic">2021</span>
 * Led development of an open-source anomaly detection tool for SQL data warehouses.
 * Implemented statistical models for outlier detection and root cause analysis.
 * [GitHub Repository](https://github.com/cuebook/CueObserve)
 
-**Food Safety Blockchain**
+**Food Safety Blockchain** <span style="float:right; font-weight:normal; font-style:italic">2019</span>
 * Developed blockchain solution in Python to track food across supply chain stages.
 * Implemented Flask API for third-party application integration.
 * [GitHub Repository](https://github.com/vineetk1998/foodchain)
