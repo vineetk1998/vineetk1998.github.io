@@ -8,10 +8,10 @@ vinetchoudhary@gmail.com | +91 90019-36749
 Results-driven software architect with 6+ years of experience designing and implementing scalable, high-performing distributed systems that solve complex business challenges. Led cross-functional engineering initiatives that reduced booking failures by 95% and enhanced platform reliability by 35%. Skilled in architecting service-based systems, implementing end-to-end observability, optimizing performance, and mentoring engineering teams while establishing best practices across organizations.
 
 ## Technical Skills
-**Languages & Frameworks:** JavaScript/TypeScript, Node.js, Python, React.js, Express.js, Django, LangChain, LangGraph
-**Infrastructure & Cloud:** AWS (EC2, Lambda, S3, EKS, Bedrock, Polly, CloudWatch), Docker, Kubernetes, CI/CD (GitHub Actions)
-**Databases & Messaging:** MongoDB, PostgreSQL, Redis, Elasticsearch, BullMQ, Druid
-**Monitoring & Observability:** Elastic APM, Prometheus, Grafana, Kibana
+**Languages & Frameworks:** JavaScript/TypeScript, Node.js, Python, React.js, Express.js, Django, LangChain, LangGraph<br>
+**Infrastructure & Cloud:** AWS (EC2, Lambda, S3, EKS, Bedrock, Polly, CloudWatch), Docker, Kubernetes, CI/CD (GitHub Actions)<br>
+**Databases & Messaging:** MongoDB, PostgreSQL, Redis, Elasticsearch, BullMQ, Druid<br>
+**Monitoring & Observability:** Elastic APM, Prometheus, Grafana, Kibana<br>
 **Architecture & Patterns:** Service-Oriented Architecture, Event-Driven Architecture, Serverless Architecture, Distributed Systems, RESTful APIs
 
 ## Professional Experience
@@ -39,6 +39,7 @@ Results-driven software architect with 6+ years of experience designing and impl
 * Influenced engineering practices across teams by introducing standardized design reviews, CI enforcement, and observability patterns—improving consistency and reducing defects by 25%.
 * Mentored engineers on system design, tradeoffs, and failure modes, enabling independent ownership of critical services and 3 promotions to senior roles.
 * Codified incident learnings into automated safeguards (runbooks, alerts, failure pattern detection), reducing repeat production issues.
+
 ---
 
 ### Cuebook
