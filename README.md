@@ -8,11 +8,11 @@ vinetchoudhary@gmail.com | +91 90019-36749
 Results-driven software architect with 6+ years of experience designing and implementing scalable, high-performing distributed systems that solve complex business challenges. Led cross-functional engineering initiatives that reduced booking failures by 95% and enhanced platform reliability by 35%. Skilled in architecting service-based systems, implementing end-to-end observability, optimizing performance, and mentoring engineering teams while establishing best practices across organizations.
 
 ## Technical Skills
-**Languages & Frameworks:** JavaScript/TypeScript, Node.js, Python, React.js, Express.js, Django, LangChain, LangGraph  
-**Infrastructure & Cloud:** AWS (EC2, Lambda, S3, EKS, Bedrock, Polly), Docker, Kubernetes, CI/CD (GitHub Actions), Serverless Architecture  
-**Databases & Data:** MongoDB, PostgreSQL, Redis, ElasticSearch, Druid  
-**Monitoring & Observability:** Elastic APM, Prometheus, Grafana, Kibana  
-**Architecture:** Service-Oriented Architecture, Event-driven Architecture, Distributed Systems, RESTful APIs
+**Languages & Frameworks:** JavaScript/TypeScript, Node.js, Python, React.js, Express.js, Django, LangChain, LangGraph
+**Infrastructure & Cloud:** AWS (EC2, Lambda, S3, EKS, Bedrock, Polly, CloudWatch), Docker, Kubernetes, CI/CD (GitHub Actions)
+**Databases & Messaging:** MongoDB, PostgreSQL, Redis, Elasticsearch, BullMQ, Druid
+**Monitoring & Observability:** Elastic APM, Prometheus, Grafana, Kibana
+**Architecture & Patterns:** Service-Oriented Architecture, Event-Driven Architecture, Serverless Architecture, Distributed Systems, RESTful APIs
 
 ## Professional Experience
 
@@ -21,24 +21,24 @@ Results-driven software architect with 6+ years of experience designing and impl
 #### Senior Software Engineer <span style="float:right; font-weight:normal; font-style:italic">Apr 2022 – Jul 2025</span>
 
 ##### Technical Leadership & System Architecture
-* Architected a unified booking platform integrating 20+ vendor systems, scaling to 50,000+ monthly transactions. Implemented proactive health monitoring and automated recovery—reducing booking failures by 95% and improving customer satisfaction scores.
-* Redesigned listing, payments, and inventory subsystems. Introducing geospatial search algorithms, real-time capacity management, and advanced availability optimization—achieving 40% faster search response times and boosting operational efficiency.
-* Standardized data access patterns, caching strategies, and rate-limiting policies across 12+ independently deployed services—improving system consistency by 60% and reducing technical debt.
+* Architected a factory-adapter-facade platform across 20+ vendor REST APIs with circuit breakers, retries, and automated outage detection—eliminating manual vendor management, enabling real-time inventory, and scaling to 50,000+ monthly transactions with under 1% booking failures.
+* Built a config-driven, command-pattern health check service with pluggable modules—out-of-box periodicity, alerting, and dashboard—supporting API availability checks and conditional database query assertions across all internal and external services.
+* Designed inventory systems for day passes (day-level) and meeting rooms (per-minute), mirroring vendor data for efficient paginated count queries, introduced geo-polygon locality search, integrated payment gateway end-to-end, and optimised high-volume operational listings—cutting listing p95 from 6s to under 900ms.
+* Built a plug-and-play maker-checker platform using facade-command-factory patterns, where new operations onboard via a single interface—supporting 5+ types with role-based approval gates, pre-execution state validation, and an approval and audit dashboard—replacing email-based vendor management and processing 100s of monthly operations.
 
 ##### Infrastructure & DevOps Excellence
-* Pioneered zero-downtime deployment via CI/CD pipelines with automated rollback and graceful shutdowns—enabling daily releases at 99.99% reliability and reducing deployment-related incidents by 60%.
-* Enhanced observability by integrating Elastic APM, external service health checks, and real-time dashboards—cutting production issue resolution time by 30% and enabling proactive bottleneck detection.
-* Architected resilient, compliant data infrastructure with multi-region MongoDB replica sets, Point-in-Time Recovery (PITR), and automated backup/restore processes—ensuring 99.9% data availability.
+* Built GitHub Actions CI/CD pipelines across all application and infrastructure services with rolling deployments, health checks, and automated rollback—reducing deployment downtime from 2–3 incidents/week to near-zero.
+* Instrumented Elastic APM with custom DB and cache spans and distributed tracing across vendor, external, and internal services, built Kibana dashboards, and optimized CloudWatch field indexing—surfacing failures and latency patterns, cutting log costs by 80%, and driving p95 under 1s.
+* As sole DevOps engineer, deployed and maintained MongoDB (sharding, replica sets, PITR), Elasticsearch, Redis, and BullMQ with automated backup/restore testing—surviving production failovers with zero data loss.
 
 ##### Security & Compliance Systems
-* Unified security posture by implementing CASL-based authorization, enforcing end-to-end encryption, integrating AWS secrets management, establishing RBAC policies, and automating patching—achieving a 99.8% compliance score and reducing vulnerabilities by 90%.
-* Implemented nginx SSL termination to enforce secure, scalable service delivery.
-* Redesigned auditability and privacy systems with centralized audit logging and automated PII scrubbing—enabling 4x faster root cause analysis and ensuring compliance with evolving data privacy regulations.
+* Hardened security posture by enforcing CASL least-privilege at the repository layer, TLS across all inter-service communication, RBAC policies, and AWS Secrets Manager—addressing 90% of identified vulnerability surface.
+* Established org-wide compliance foundations, enforcing PII-safe logging standards via ESLint across all services, building an automated PII redaction pipeline over all log files, and implementing IAM-gated access to sensitive logs—reducing PII data exposure by 95%.
 
 ##### Engineering Culture & Mentorship
-* Elevated engineering culture through code quality standards, architectural reviews, and mentorship of 5+ engineers—reducing production bugs by 25% and enabling 3 promotions to senior roles.
-* Fostered cross-functional collaboration, improving delivery velocity and technical alignment across teams.
-
+* Influenced engineering practices across teams by introducing standardized design reviews, CI enforcement, and observability patterns—improving consistency and reducing defects by 25%.
+* Mentored engineers on system design, tradeoffs, and failure modes, enabling independent ownership of critical services and 3 promotions to senior roles.
+* Codified incident learnings into automated safeguards (runbooks, alerts, failure pattern detection), reducing repeat production issues.
 ---
 
 ### Cuebook
