@@ -10,7 +10,7 @@ Results-driven software architect with 6+ years of experience designing and impl
 ---
 
 ## Technical Skills
-**Languages & Frameworks:** JavaScript/TypeScript, Node.js, Python, React.js, Express.js, Django, LangChain, LangGraph<br>
+**Languages & Frameworks:** Python, JavaScript/TypeScript, Node.js, React.js, Express.js, Django, LangChain, LangGraph<br>
 **Infrastructure & Cloud:** AWS (EC2, Lambda, S3, EKS, Bedrock, Polly, CloudWatch), Docker, Kubernetes, CI/CD (GitHub Actions)<br>
 **Databases & Messaging:** MongoDB, PostgreSQL, Redis, Elasticsearch, BullMQ, Druid<br>
 **Monitoring & Observability:** Elastic APM, Prometheus, Grafana, Kibana<br>
@@ -25,15 +25,14 @@ Results-driven software architect with 6+ years of experience designing and impl
 #### Senior Software Engineer <span style="float:right; font-weight:normal; font-style:italic">Apr 2022 – Jul 2025</span>
 
 *Technical Leadership & System Architecture*
-* Architected a factory-adapter-facade platform across 20+ vendor REST APIs with circuit breakers, retries, and automated outage detection—eliminating manual vendor management, enabling real-time inventory, and scaling to 50,000+ monthly transactions with under 1% booking failures.
-* Built a config-driven, command-pattern health check service with pluggable modules—out-of-box periodicity, alerting, and dashboard—supporting API availability checks and conditional database query assertions across all internal and external services.
-* Designed inventory systems for day passes (day-level) and meeting rooms (per-minute), mirroring vendor data for efficient paginated count queries, introduced geo-polygon locality search, integrated payment gateway end-to-end, and optimised high-volume operational listings—cutting listing p95 from 6s to under 600ms.
-* Built a plug-and-play maker-checker platform using facade-command-factory patterns, where new operations onboard via a single interface—supporting 5+ types with role-based approval gates, pre-execution state validation, and an approval and audit dashboard—replacing email-based vendor management and processing 100s of monthly operations.
+* Owned vendor integration architecture across 20+ partner APIs, standardizing resilience and onboarding for a fragmented partner ecosystem. Chose a common adapter layer over one off integrations to improve maintainability and operational consistency. Cut onboarding time by 85%, reduced integration defects by 95%, and sustained under 1% booking failures across 50K+ monthly transactions.
+* Owned production health visibility across internal and vendor systems. Prior monitoring was manual and reactive, so I built a config-driven synthetic monitoring platform with built-in auth, scheduling, retries, alerting, and dashboards. This shifted issue discovery from reactive to proactive, cutting MTTR from hours to minutes.
+* Owned the shift from email-based vendor operations to a governed maker-checker platform, standardizing how approval workflows were added across teams. Supported 5+ operation types with role-based approvals, state validation, and auditability, processing 100s of monthly operations.
 
 *Infrastructure & DevOps Excellence*
-* Built GitHub Actions CI/CD pipelines across all application and infrastructure services with rolling deployments, health checks, and automated rollback—reducing deployment downtime from 2–3 incidents/week to near-zero.
-* Instrumented Elastic APM with custom DB and cache spans and distributed tracing across vendor, external, and internal services, built Kibana dashboards, and optimized CloudWatch field indexing—surfacing failures and latency patterns, cutting log costs by 80%, and driving p95 under 1s.
-* As sole DevOps engineer, deployed and maintained MongoDB (sharding, replica sets, PITR), Elasticsearch, Redis, and BullMQ with automated backup/restore testing—surviving production failovers with zero data loss.
+* Owned CI/CD pipelines across all application and infrastructure services with rolling deployments, health checks, and automated rollback—reducing deployment downtime from 3+ incidents/week to near-zero.
+* Owned observability across vendor, external, and internal services, instrumenting Elastic APM with custom DB and cache spans, adding distributed tracing, and optimizing CloudWatch indexing. This exposed latency and failure patterns earlier, cut log costs by 80%, and brought p95 below 1s.
+* Owned reliability of core data infrastructure as the sole DevOps engineer, operating MongoDB with sharding, replica sets, and PITR, alongside Elasticsearch, Redis, and BullMQ. Added automated backup and restore drills, enabling production failovers with zero data loss.
 
 *Security & Compliance Systems*
 * Hardened security posture by enforcing CASL least-privilege at the repository layer, TLS across all inter-service communication, RBAC policies, and AWS Secrets Manager—addressing 90% of identified vulnerability surface.
