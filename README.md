@@ -5,7 +5,8 @@
 vinetchoudhary@gmail.com | +91 90019-36749
 
 ## Professional Summary
-Results-driven software architect with 6+ years of experience designing and implementing scalable, high-performing distributed systems that solve complex business challenges. Led cross-functional engineering initiatives that scaled a vendor booking platform to 50,000+ monthly transactions with under 1% booking failures. Skilled in architecting service-based systems, implementing end-to-end observability, optimizing performance, and mentoring engineering teams while establishing best practices across organizations.
+Senior full-stack engineer with 6+ years of ownership across product, platform, and the infrastructure behind them. At myHQ, ran the external vendor ecosystem connecting users to 20+ workspace providers, powering 50K+ monthly bookings on the product's primary supply path, alongside broader ownership of reliability, observability, and security posture across the product stack. At Cuebook, owned the analytics and ML-driven anomaly detection engine of a B2B SAAS product, delivering automated root-cause analysis at 95% accuracy. Mentored 6+ engineers into senior roles and built engineering standards adopted across teams.
+
 
 ---
 
@@ -55,7 +56,7 @@ Results-driven software architect with 6+ years of experience designing and impl
 
 #### Founding Software Engineer <span style="float:right; font-weight:normal; font-style:italic">Nov 2019 – Mar 2021</span>
 * Designed innovative data query language (CueL) using multiple interdependent DAGs, reducing query complexity by 70% for end users.
-* Architected a parallel anomaly detection service using AWS Lambda across 100M+ factor combinations, achieving 95% accuracy in automated root cause analysis.
+* Architected a parallel anomaly detection service using AWS Lambda, processing 10M+ time-series evaluations daily, achieving 95% accuracy in automated root cause analysis.
 * Implemented ElasticSearch & ranking algorithm based on user interaction patterns, metric importance, and configuration, improving search relevance by 80%.
 * Developed K-Means Clustering-based AI Segmentation for automated smart analysis, reducing manual analysis time by 60%.
 
