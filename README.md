@@ -2,10 +2,10 @@
 **Senior Software Engineer | Technical Leader | System Architect**
 
 [LinkedIn: vineetkch](https://www.linkedin.com/in/vineetkch) | [GitHub: vineetk1998](https://github.com/vineetk1998)  
-vinetchoudhary@gmail.com | +91 90019-36749
+vinetchoudhary@gmail.com | +91-9001936749
 
 ## Professional Summary
-Senior full-stack engineer with 6+ years of ownership across product, platform, and the infrastructure behind them. At myHQ, ran the external vendor ecosystem connecting users to 20+ workspace providers, powering 50K+ monthly bookings on the product's primary supply path, alongside broader ownership of reliability, observability, and security posture across the product stack. At Cuebook, owned the analytics and ML-driven anomaly detection engine of a B2B SAAS product, delivering automated root-cause analysis at 95% accuracy. Mentored 6+ engineers into senior roles and built engineering standards adopted across teams.
+Senior full-stack engineer with 6+ years of ownership across product, platform, and the infrastructure behind them. At myHQ, ran the external vendor ecosystem connecting users to 20+ workspace providers, powering 50K+ monthly bookings on the product's primary supply path, alongside broader ownership of reliability, observability, and security org-wide. At Cuebook, owned the analytics and ML-driven anomaly detection engine powering the company's B2B SaaS offering, delivering automated root-cause analysis at 95% accuracy. Mentored 6+ engineers into senior roles and built engineering standards adopted company-wide.
 
 
 ---
@@ -15,7 +15,7 @@ Senior full-stack engineer with 6+ years of ownership across product, platform, 
 **Infrastructure & Cloud:** AWS (EC2, Lambda, S3, EKS, Bedrock, Polly, CloudWatch), Docker, Kubernetes, CI/CD (GitHub Actions)<br>
 **Databases & Messaging:** MongoDB, PostgreSQL, Redis, Elasticsearch, BullMQ, Druid<br>
 **Monitoring & Observability:** Elastic APM, Prometheus, Grafana, Kibana<br>
-**Architecture & Patterns:** Service-Oriented Architecture, Event-Driven Architecture, Serverless Architecture, Distributed Systems, RESTful APIs
+**Architecture & Patterns:** Microservices, Service-Oriented Architecture, Event-Driven Architecture, Serverless Architecture, Distributed Systems, RESTful APIs, System Design
 
 ---
 
@@ -26,21 +26,21 @@ Senior full-stack engineer with 6+ years of ownership across product, platform, 
 #### Senior Software Engineer <span style="float:right; font-weight:normal; font-style:italic">Apr 2022 – Jul 2025</span>
 
 *Technical Leadership & System Architecture*
-* Owned vendor integration architecture across 20+ partner APIs, standardizing resilience and onboarding for a fragmented partner ecosystem. Chose a common adapter layer over one off integrations to improve maintainability and operational consistency. Cut onboarding time by 85%, reduced integration defects by 95%, and sustained under 1% booking failures across 50K+ monthly transactions.
+* Owned vendor integration architecture across 20+ partner APIs, standardizing resilience and onboarding for a fragmented partner ecosystem. Chose a common adapter layer over one off integrations to improve maintainability and operational consistency. Cut onboarding time by 85%, reduced integration defects by 95%, and sustained under 0.1% booking failures across 50K+ monthly transactions.
 * Owned production health visibility across internal and vendor systems. Prior monitoring was manual and reactive, so I built a config-driven synthetic monitoring platform with built-in auth, scheduling, retries, alerting, and dashboards. This shifted issue discovery from reactive to proactive, cutting MTTR from hours to minutes.
-* Owned the shift from email-based vendor operations to a governed maker-checker platform, standardizing how approval workflows were added across teams. Supported 5+ operation types with role-based approvals, state validation, and auditability, processing 100s of monthly operations.
+* Led the shift from email-based vendor operations to a governed maker-checker platform, standardizing how approval workflows were added across teams. Supported 5+ operation types with role-based approvals, state validation, and auditability, processing 1000s of monthly operations.
 
-*Infrastructure & DevOps Excellence*
-* Owned CI/CD pipelines across all application and infrastructure services with rolling deployments, health checks, and automated rollback—reducing deployment downtime from 3+ incidents/week to near-zero.
+*Infrastructure & DevOps*
+* Owned CI/CD pipelines across all application and infrastructure services with rolling deployments, health checks, and automated rollback, reducing deployment downtime from 3+ incidents/week to near-zero.
 * Owned observability across vendor, external, and internal services, instrumenting Elastic APM with custom DB and cache spans, adding distributed tracing, and optimizing CloudWatch indexing. This exposed latency and failure patterns earlier, cut log costs by 80%, and brought p95 below 1s.
 * Owned reliability of core data infrastructure as the sole DevOps engineer, operating MongoDB with sharding, replica sets, and PITR, alongside Elasticsearch, Redis, and BullMQ. Added automated backup and restore drills, enabling production failovers with zero data loss.
 
-*Security & Compliance Systems*
-* Hardened security posture by enforcing CASL least-privilege at the repository layer, TLS across all inter-service communication, RBAC policies, and AWS Secrets Manager—addressing 90% of identified vulnerability surface.
-* Established org-wide compliance foundations, enforcing PII-safe logging standards via ESLint across all services, building an automated PII redaction pipeline over all log files, and implementing IAM-gated access to sensitive logs—reducing PII data exposure by 95%.
+*Security & Compliance*
+* Hardened security by enforcing CASL least-privilege at the repository layer, TLS across all inter-service communication, RBAC policies, and AWS Secrets Manager, addressing 90% of identified vulnerability surface.
+* Established org-wide compliance foundations, enforcing PII-safe logging standards via ESLint across all services, building an automated PII redaction pipeline over all log files, and implementing IAM-gated access to sensitive logs, reducing PII data exposure by 95%.
 
 *Engineering Culture & Mentorship*
-* Influenced engineering practices across teams by introducing standardized design reviews, CI enforcement, and observability patterns—improving consistency and reducing defects by 25%.
+* Influenced engineering practices across teams by introducing standardized design reviews, CI enforcement, and observability patterns, improving consistency and reducing defects by 25%.
 * Mentored engineers on system design, tradeoffs, and failure modes, enabling independent ownership of critical services and 3 promotions to senior roles.
 * Codified incident learnings into automated safeguards (runbooks, alerts, failure pattern detection), reducing repeat production issues.
 
@@ -49,16 +49,16 @@ Senior full-stack engineer with 6+ years of ownership across product, platform, 
 ### Cuebook
 
 #### Lead Software Engineer <span style="float:right; font-weight:normal; font-style:italic">Apr 2021 – Mar 2022</span>
-* Led a 4-person engineering team for the open-source release of CueObserve, a time-series anomaly detection product for SQL databases, achieving 200+ GitHub stars.
-* Designed and implemented a robust cloud engineering system for automated scaling, improving maintainability by 2 grades and reducing operational overhead by 40%.
+* Led the 4-engineer open-source release of CueObserve (SQL-native anomaly detection), choosing self-hostable over managed for lightweight adoption, earning 200+ GitHub stars.
+* Designed and implemented a cloud engineering system for automated scaling, improving maintainability by 2 grades and reducing operational overhead by 40%.
 * Built CI/CD pipelines with GitHub Actions, increasing automated test coverage by 60% and reducing deployment time by 50%.
 * Contributed to Spark based ELT pipelines over Apache Iceberg, enabling scalable lakehouse ingestion and transformation of 10M+ records/day via Zeppelin driven workflows.
 
 #### Founding Software Engineer <span style="float:right; font-weight:normal; font-style:italic">Nov 2019 – Mar 2021</span>
-* Designed innovative data query language (CueL) using multiple interdependent DAGs, reducing query complexity by 70% for end users.
+* Designed CueL, a DAG-based query planner covering the three analyst workflows (top-N, comparison, time-series), cutting query complexity by 70% versus hand-written SQL.
 * Architected a parallel anomaly detection service using AWS Lambda, processing 10M+ time-series evaluations daily, achieving 95% accuracy in automated root cause analysis.
 * Implemented ElasticSearch & ranking algorithm based on user interaction patterns, metric importance, and configuration, improving search relevance by 80%.
-* Developed K-Means Clustering-based AI Segmentation for automated smart analysis, reducing manual analysis time by 60%.
+* Developed K-Means Clustering-based AI Segmentation of metrics for automated analysis, reducing manual analysis time by 60%.
 
 ---
 
