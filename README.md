@@ -13,7 +13,7 @@ Senior full-stack engineer with 6+ years of ownership across product, platform, 
 ## Technical Skills
 **Languages & Frameworks:** Python, JavaScript/TypeScript, Node.js, React.js, Express.js, Django, LangChain, LangGraph<br>
 **Infrastructure & Cloud:** AWS (EC2, Lambda, S3, EKS, Bedrock, Polly, CloudWatch), Docker, Kubernetes, CI/CD (GitHub Actions)<br>
-**Databases & Messaging:** MongoDB, PostgreSQL, Redis, Elasticsearch, BullMQ, Druid<br>
+**Databases & Messaging:** MongoDB, PostgreSQL, Redis, Elasticsearch, BullMQ, Celery, Druid<br>
 **Monitoring & Observability:** Elastic APM, Prometheus, Grafana, Kibana<br>
 **Architecture & Patterns:** Microservices, Service-Oriented Architecture, Event-Driven Architecture, Serverless Architecture, Distributed Systems, RESTful APIs, System Design
 
@@ -22,6 +22,8 @@ Senior full-stack engineer with 6+ years of ownership across product, platform, 
 ## Professional Experience
 
 ### myHQ
+
+**Stack:** TypeScript, Node.js, React.js, Express.js, AWS (EC2, Lambda, S3, Bedrock, Polly, CloudWatch), Docker, MongoDB, Redis, Elasticsearch, BullMQ, Elastic APM, Kibana, CI/CD
 
 #### Senior Software Engineer <span style="float:right; font-weight:normal; font-style:italic">Apr 2022 – Jul 2025</span>
 
@@ -48,6 +50,8 @@ Senior full-stack engineer with 6+ years of ownership across product, platform, 
 
 ### Cuebook
 
+**Stack:** Python, Django, JavaScript/TypeScript, AWS (EC2, Lambda, S3), EKS, Kubernetes, Docker, PostgreSQL, Redis, Celery, Elasticsearch, Druid, Prometheus, Grafana, CI/CD
+
 #### Lead Software Engineer <span style="float:right; font-weight:normal; font-style:italic">Apr 2021 – Mar 2022</span>
 * Led the 4-engineer open-source release of CueObserve (SQL-native anomaly detection), choosing self-hostable over managed for lightweight adoption, earning 200+ GitHub stars.
 * Designed and implemented a cloud engineering system for automated scaling, improving maintainability by 2 grades and reducing operational overhead by 40%.
@@ -64,6 +68,8 @@ Senior full-stack engineer with 6+ years of ownership across product, platform, 
 
 ### Alpha Tech StartUp
 
+**Stack:** React.js, Redux, Firebase
+
 #### Founder <span style="float:right; font-weight:normal; font-style:italic">May 2019 – Oct 2019</span>
 * Led end-to-end product development of a SaaS ERP for educational institutions, onboarding 2 institutions and 1,000+ students in 6 months.
 * Designed 7+ integrated scalable modules using ReactJS with Redux and Firebase, enabling real-time data sync.
@@ -79,16 +85,17 @@ Bachelor of Technology (B.Tech), Information Technology
 ---
 
 ## Projects & Open Source
-**AI Sales Training Platform** *(myHQ Hackathon)* <span style="float:right; font-weight:normal; font-style:italic">2025</span>
+#### AI Sales Training Platform *(myHQ Hackathon)* <span style="float:right; font-weight:normal; font-style:italic">2025</span>
+**Stack:** LangChain, LangGraph, AWS Bedrock, AWS Polly, XGBoost, SHAP
 * Led a team of 6, covering SOP ingestion, AWS Bedrock-driven course and quiz generation, a LangGraph-managed 4-stage buyer simulation (Discovery, Proposal, Objection Handling, Closing) driven by structured system prompts, and AWS Polly voice output.
 * Architected the production roadmap: LangChain RAG for scalable retrieval, a local XGBoost model with SHAP-derived feature importances injected as structured prompt context for company-specific conversion signals, and optional fine-tuning for end-user model personalisation.
 
-**CueObserve - Time-series Anomaly Detection** <span style="float:right; font-weight:normal; font-style:italic">2021</span>
+#### CueObserve - Time-series Anomaly Detection <span style="float:right; font-weight:normal; font-style:italic">2021</span>
 * Led development of an open-source anomaly detection tool for SQL data warehouses.
 * Implemented statistical models for outlier detection and root cause analysis.
 * [GitHub Repository](https://github.com/cuebook/CueObserve)
 
-**Food Safety Blockchain** <span style="float:right; font-weight:normal; font-style:italic">2019</span>
+#### Food Safety Blockchain <span style="float:right; font-weight:normal; font-style:italic">2019</span>
 * Developed blockchain solution in Python to track food across supply chain stages.
 * Implemented Flask API for third-party application integration.
 * [GitHub Repository](https://github.com/vineetk1998/foodchain)
