@@ -1,7 +1,7 @@
 # Vineet Kumar
 **Senior Software Engineer | Technical Leader**
 
-[LinkedIn: vineetkch](https://www.linkedin.com/in/vineetkch) | [GitHub: vineetk1998](https://github.com/vineetk1998)  
+[linkedin.com/in/vineetkch](https://www.linkedin.com/in/vineetkch) | [github.com/vineetk1998](https://github.com/vineetk1998)  
 vinetchoudhary@gmail.com | +91-9001936749
 
 ## Professional Summary
@@ -99,10 +99,6 @@ Bachelor of Technology (B.Tech), Information Technology
 #### CueObserve - Time-series Anomaly Detection <span style="float:right; font-weight:normal; font-style:italic">2021</span>
 * Open-source anomaly detection for SQL data warehouses, 200+ GitHub stars — [github.com/cuebook/CueObserve](https://github.com/cuebook/CueObserve)
 
-#### Food Safety Blockchain <span style="float:right; font-weight:normal; font-style:italic">2019</span>
-* Developed blockchain solution in Python to track food across supply chain stages.
-* Implemented Flask API for third-party application integration.
-* [GitHub Repository](https://github.com/vineetk1998/foodchain)
 
 ---
 
