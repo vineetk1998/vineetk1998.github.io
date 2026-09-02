@@ -1,11 +1,11 @@
 # Vineet Kumar
-**Senior Software Engineer | Technical Leader | System Architect**
+**Senior Software Engineer | Technical Leader**
 
 [LinkedIn: vineetkch](https://www.linkedin.com/in/vineetkch) | [GitHub: vineetk1998](https://github.com/vineetk1998)  
 vinetchoudhary@gmail.com | +91-9001936749
 
 ## Professional Summary
-Senior full-stack engineer with 6+ years of ownership across product, platform, and the infrastructure behind them. At myHQ, ran the external vendor ecosystem connecting users to 20+ workspace providers, powering 50K+ monthly bookings on the product's primary supply path, alongside broader ownership of reliability, observability, and security org-wide. At Cuebook, owned the analytics and ML-driven anomaly detection engine powering the company's B2B SaaS offering, delivering automated root-cause analysis at 95% accuracy. Mentored 6+ engineers into senior roles and built engineering standards adopted company-wide.
+Senior full-stack engineer with 6+ years of ownership across product, platform, and the infrastructure behind them. At myHQ, ran the external vendor ecosystem connecting users to 20+ workspace providers, powering 50K+ monthly bookings on the product's primary supply path, alongside broader ownership of reliability, observability, and security org-wide. At Cuebook, owned the analytics and ML-driven anomaly detection engine powering the company's B2B SaaS offering, delivering automated root-cause analysis at 95% accuracy. Mentored 6+ engineers — 3 promoted to senior roles — and built engineering standards adopted company-wide.
 
 
 ---
@@ -20,6 +20,16 @@ Senior full-stack engineer with 6+ years of ownership across product, platform, 
 ---
 
 ## Professional Experience
+
+### Independent
+
+**Stack:** TypeScript, Node.js, Express, Next.js, PostgreSQL, Substrate/Polkadot API, Supabase, Cloudflare Workers
+
+#### Independent Software Engineer <span style="float:right; font-weight:normal; font-style:italic">Jun 2025 – Present</span>
+* Indexed the Avail blockchain's history — raw chain data decoded into several hundred GB of PostgreSQL — as a solo, public-source project, served through a REST API and analytics dashboard. Ran a self-hosted full node when public RPC rate limits bottlenecked the multi-day backfills, which were built for crash-safe, checkpointed resume.
+* Shipped and run Playlist Wrangler, a browser extension live on the Chrome, Firefox, and Edge stores, plus two production sites on Supabase and Cloudflare Workers.
+
+---
 
 ### myHQ
 
@@ -61,19 +71,15 @@ Senior full-stack engineer with 6+ years of ownership across product, platform, 
 #### Founding Software Engineer <span style="float:right; font-weight:normal; font-style:italic">Nov 2019 – Mar 2021</span>
 * Designed CueL, a DAG-based query planner covering the three analyst workflows (top-N, comparison, time-series), cutting query complexity by 70% versus hand-written SQL.
 * Architected a parallel anomaly detection service using AWS Lambda, processing 10M+ time-series evaluations daily, achieving 95% accuracy in automated root cause analysis.
-* Implemented ElasticSearch & ranking algorithm based on user interaction patterns, metric importance, and configuration, improving search relevance by 80%.
+* Implemented Elasticsearch & ranking algorithm based on user interaction patterns, metric importance, and configuration, improving search relevance by 80%.
 * Developed K-Means Clustering-based AI Segmentation of metrics for automated analysis, reducing manual analysis time by 60%.
 
 ---
 
 ### Alpha Tech StartUp
 
-**Stack:** React.js, Redux, Firebase
-
 #### Founder <span style="float:right; font-weight:normal; font-style:italic">May 2019 – Oct 2019</span>
-* Led end-to-end product development of a SaaS ERP for educational institutions, onboarding 2 institutions and 1,000+ students in 6 months.
-* Designed 7+ integrated scalable modules using ReactJS with Redux and Firebase, enabling real-time data sync.
-* Managed complete product lifecycle using Agile, delivering MVP 20% ahead of schedule.
+* Founded and built a SaaS ERP for educational institutions (React, Redux, Firebase), onboarding 2 institutions and 1,000+ students in 6 months.
 
 ---
 
@@ -91,9 +97,7 @@ Bachelor of Technology (B.Tech), Information Technology
 * Architected the production roadmap: LangChain RAG for scalable retrieval, a local XGBoost model with SHAP-derived feature importances injected as structured prompt context for company-specific conversion signals, and optional fine-tuning for end-user model personalisation.
 
 #### CueObserve - Time-series Anomaly Detection <span style="float:right; font-weight:normal; font-style:italic">2021</span>
-* Led development of an open-source anomaly detection tool for SQL data warehouses.
-* Implemented statistical models for outlier detection and root cause analysis.
-* [GitHub Repository](https://github.com/cuebook/CueObserve)
+* Open-source anomaly detection for SQL data warehouses, 200+ GitHub stars — [github.com/cuebook/CueObserve](https://github.com/cuebook/CueObserve)
 
 #### Food Safety Blockchain <span style="float:right; font-weight:normal; font-style:italic">2019</span>
 * Developed blockchain solution in Python to track food across supply chain stages.
@@ -105,4 +109,3 @@ Bachelor of Technology (B.Tech), Information Technology
 ## Awards & Achievements
 * Technical Excellence Award at myHQ for implementing system health check service (2023)
 * [Published paper in ICACC](https://www.researchgate.net/publication/344001218_Ensuring_Food_Safety_Through_Blockchain) (2019)
-* Idea accepted in National Innovation Foundation (2013)
