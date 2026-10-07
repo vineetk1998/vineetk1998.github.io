@@ -1,8 +1,7 @@
 # Vineet Kumar
 **Senior Software Engineer | Technical Leader**
 
-[linkedin.com/in/vineetkch](https://www.linkedin.com/in/vineetkch) | [github.com/vineetk1998](https://github.com/vineetk1998)  
-vinetchoudhary@gmail.com 
+[linkedin.com/in/vineetkch](https://www.linkedin.com/in/vineetkch) | [github.com/vineetk1998](https://github.com/vineetk1998) | vinetchoudhary@gmail.com 
 
 ## Professional Summary
 Senior full-stack engineer with 7+ years owning product, platform and the infrastructure behind them. At myHQ, ran the vendor ecosystem connecting users to 20+ workspace providers behind 50K+ monthly bookings, and owned reliability, observability and security org-wide, cutting MTTR from hours to minutes and log costs by 80%. At Cuebook, owned the ML-driven anomaly detection engine delivering automated root-cause analysis at 95% accuracy. Builds AI-first, directing coding agents and owning what ships, gated by review, tests and CI. Mentored 6+ engineers, 3 promoted to senior roles.
