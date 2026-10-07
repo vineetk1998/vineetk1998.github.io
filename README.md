@@ -2,19 +2,19 @@
 **Senior Software Engineer | Technical Leader**
 
 [linkedin.com/in/vineetkch](https://www.linkedin.com/in/vineetkch) | [github.com/vineetk1998](https://github.com/vineetk1998)  
-vinetchoudhary@gmail.com | +91-9001936749
+vinetchoudhary@gmail.com 
 
 ## Professional Summary
-Senior full-stack engineer with 7+ years of ownership across product, platform, and the infrastructure behind them. At myHQ, ran the external vendor ecosystem connecting users to 20+ workspace providers, powering 50K+ monthly bookings on the product's primary supply path, alongside broader ownership of reliability, observability, and security org-wide. At Cuebook, owned the analytics and ML-driven anomaly detection engine powering the company's B2B SaaS offering, delivering automated root-cause analysis at 95% accuracy. Mentored 6+ engineers — 3 promoted to senior roles — and built engineering standards adopted company-wide.
+Senior full-stack engineer with 7+ years owning product, platform and the infrastructure behind them. At myHQ, ran the vendor ecosystem connecting users to 20+ workspace providers behind 50K+ monthly bookings, and owned reliability, observability and security org-wide, cutting MTTR from hours to minutes and log costs by 80%. At Cuebook, owned the ML-driven anomaly detection engine delivering automated root-cause analysis at 95% accuracy. Builds AI-first, directing coding agents and owning what ships, gated by review, tests and CI. Mentored 6+ engineers, 3 promoted to senior roles.
 
 
 ---
 
 ## Technical Skills
-**Languages & Frameworks:** Node.js, TypeScript/JavaScript, React.js, Python, Express.js, Django, LangChain, LangGraph<br>
+**Languages & Frameworks:** Node.js, JavaScript/TypeScript, React.js, Python, Express.js, Django, LangChain, LangGraph<br>
 **Infrastructure & Cloud:** AWS (EC2, Lambda, S3, EKS, Bedrock, Polly, CloudWatch), Docker, Kubernetes, CI/CD (GitHub Actions)<br>
 **Databases & Messaging:** MongoDB, PostgreSQL, Redis, Elasticsearch, BullMQ, Celery, Druid<br>
-**Monitoring & Observability:** Elastic APM, Prometheus, Grafana, Kibana<br>
+**Reliability & Observability:** Distributed tracing (Elastic APM), structured logging, PII redaction, synthetic monitoring, alerting, runbooks, Prometheus, Grafana, Kibana, CloudWatch<br>
 **Architecture & Patterns:** Distributed Systems, Microservices, Event-Driven Architecture, RESTful APIs, System Design
 
 ---
@@ -27,11 +27,11 @@ Senior full-stack engineer with 7+ years of ownership across product, platform, 
 
 #### Independent Software Engineer *(self-directed product & infrastructure work)* <span style="float:right; font-weight:normal; font-style:italic">Jun 2025 – Present</span>
 * Indexed the Avail blockchain's history — raw chain data decoded into several hundred GB of PostgreSQL — as a solo project (public on my GitHub), served through a REST API and a React/Next.js analytics dashboard. Ran a self-hosted full node when public RPC rate limits bottlenecked the multi-day backfills, which were built for crash-safe, checkpointed resume.
-* Shipped and run Playlist Wrangler, a browser extension live on the Chrome, Firefox, and Edge stores, plus two production sites on Supabase and Cloudflare Workers under my studio, [naxatar.com](https://naxatar.com).
+* Shipped and run Playlist Wrangler, a browser extension live on the Chrome, Firefox, and Edge stores, two production sites on Supabase and Cloudflare Workers under my studio, [naxatar.com](https://naxatar.com), and ClipPal, a macOS clipboard manager in Python with 2,600+ pytest tests gated in CI.
 
 ---
 
-### myHQ
+### myHQ *(flexible-workspace marketplace, an ANAROCK company)*
 
 **Stack:** TypeScript, Node.js, Express.js, AWS (EC2, Lambda, S3, Bedrock, Polly, CloudWatch), Docker, MongoDB, Redis, Elasticsearch, BullMQ, Elastic APM, Kibana, CI/CD
 
@@ -39,12 +39,12 @@ Senior full-stack engineer with 7+ years of ownership across product, platform, 
 
 *Technical Leadership & System Architecture*
 * Owned vendor integration architecture across 20+ partner APIs, standardizing resilience and onboarding for a fragmented partner ecosystem. Chose a common adapter layer over one-off integrations to improve maintainability and operational consistency. Cut onboarding time by 85%, reduced integration defects by 95%, and sustained under 0.1% booking failures across 50K+ monthly transactions.
-* Owned production health visibility across internal and vendor systems. Prior monitoring was manual and reactive, so I built a config-driven synthetic monitoring platform with built-in auth, scheduling, retries, alerting, and dashboards. This shifted issue discovery from reactive to proactive, cutting MTTR from hours to minutes.
 * Led the shift from email-based vendor operations to a governed maker-checker platform, standardizing how approval workflows were added across teams. Supported 5+ operation types with role-based approvals, state validation, and auditability, processing 1000s of monthly operations.
 
-*Infrastructure & DevOps*
+*Reliability, Observability & Infrastructure*
+* Owned production health visibility across internal and vendor systems. Prior monitoring was manual and reactive, so I built a config-driven synthetic monitoring platform with built-in auth, scheduling, retries, alerting, and dashboards. This shifted issue discovery from reactive to proactive, cutting MTTR from hours to minutes.
 * Owned CI/CD pipelines across all application and infrastructure services with rolling deployments, health checks, and automated rollback, reducing deployment downtime from 3+ incidents/week to near-zero.
-* Owned observability across vendor, external, and internal services, instrumenting Elastic APM with custom DB and cache spans, adding distributed tracing, and optimizing CloudWatch indexing. This exposed latency and failure patterns earlier, cut log costs by 80%, and brought p95 below 1s.
+* Owned observability across vendor, external, and internal services on a core API serving ~1M requests/day, instrumenting Elastic APM with custom DB and cache spans, adding distributed tracing, and optimizing CloudWatch indexing. This exposed latency and failure patterns earlier, cut log costs by 80%, and brought p95 below 1s.
 * Owned reliability of core data infrastructure as the sole DevOps engineer, operating MongoDB with sharding, replica sets, and PITR, alongside Elasticsearch, Redis, and BullMQ. Added automated backup and restore drills, enabling production failovers with zero data loss.
 
 *Security & Compliance*
@@ -58,12 +58,12 @@ Senior full-stack engineer with 7+ years of ownership across product, platform, 
 
 ---
 
-### Cuebook
+### Cuebook *(B2B SaaS analytics / BI)*
 
 **Stack:** Python, Django, JavaScript/TypeScript, React.js, AWS (EC2, Lambda, S3), EKS, Kubernetes, Docker, PostgreSQL, Redis, Celery, Elasticsearch, Druid, Prometheus, Grafana, CI/CD
 
 #### Lead Software Engineer <span style="float:right; font-weight:normal; font-style:italic">Apr 2021 – Mar 2022</span>
-* Led the 4-engineer open-source release of CueObserve (SQL-native anomaly detection), choosing self-hostable over managed for lightweight adoption, earning 200+ GitHub stars.
+* Led the 4-engineer open-source release of [CueObserve](https://github.com/cuebook/CueObserve) (SQL-native anomaly detection), choosing self-hostable over managed for lightweight adoption, earning 200+ GitHub stars.
 * Designed and implemented a cloud engineering system for automated scaling, improving maintainability by 2 grades and reducing operational overhead by 40%.
 * Built CI/CD pipelines with GitHub Actions, increasing automated test coverage by 60% and reducing deployment time by 50%.
 * Contributed to Spark-based ELT pipelines over Apache Iceberg, enabling scalable lakehouse ingestion and transformation of 10M+ records/day via Zeppelin-driven workflows.
@@ -94,10 +94,7 @@ Bachelor of Technology (B.Tech), Information Technology
 #### AI Sales Training Platform *(myHQ Hackathon)* <span style="float:right; font-weight:normal; font-style:italic">2025</span>
 **Stack:** LangChain, LangGraph, AWS Bedrock, AWS Polly, XGBoost, SHAP
 * Led a team of 6, covering SOP ingestion, AWS Bedrock-driven course and quiz generation, a LangGraph-managed 4-stage buyer simulation (Discovery, Proposal, Objection Handling, Closing) driven by structured system prompts, and AWS Polly voice output.
-* Architected the production roadmap: LangChain RAG for scalable retrieval, a local XGBoost model with SHAP-derived feature importances injected as structured prompt context for company-specific conversion signals, and optional fine-tuning for end-user model personalisation.
-
-#### CueObserve - Time-series Anomaly Detection <span style="float:right; font-weight:normal; font-style:italic">2021</span>
-* Open-source anomaly detection for SQL data warehouses, 200+ GitHub stars — [github.com/cuebook/CueObserve](https://github.com/cuebook/CueObserve)
+* Architected the production roadmap: LangChain RAG for retrieval, a local XGBoost model whose SHAP feature importances feed the prompt as company-specific conversion signals, and optional fine-tuning.
 
 
 ---
