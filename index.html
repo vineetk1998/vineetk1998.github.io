@@ -1,0 +1,378 @@
+---
+layout: null
+# Resume page. Content lives in _data/resume.yml.
+# Design adapted from https://github.com/BartoszJarocki/cv (MIT, see LICENSE-cv-template).
+---
+{%- assign r = site.data.resume -%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+  <title>{{ r.name }} - Resume</title>
+  <meta name="description" content="{{ r.about | escape }}">
+  <meta name="author" content="{{ r.name | escape }}">
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="white">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="black">
+  <meta name="format-detection" content="telephone=no, email=no, address=no">
+  <meta property="og:type" content="profile">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="{{ r.name | escape }} - Resume">
+  <meta property="og:description" content="{{ r.about | escape }}">
+  <meta property="og:url" content="{{ '/' | absolute_url }}">
+  {%- if r.avatar_url %}
+  <meta property="og:image" content="{{ r.avatar_url }}">
+  {%- endif %}
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="{{ r.name | escape }} - Resume">
+  <meta name="twitter:description" content="{{ r.about | escape }}">
+  <link rel="canonical" href="{{ '/' | absolute_url }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Geist+Mono:wght@100..900&display=swap">
+  <link rel="stylesheet" href="{{ '/assets/css/resume.css' | relative_url }}">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": {{ r.name | jsonify }},
+    "jobTitle": {{ r.about | jsonify }},
+    "description": {{ r.summary | jsonify }},
+    "email": {{ r.contact.email | prepend: "mailto:" | jsonify }},
+    "url": {{ '/' | absolute_url | jsonify }},
+    "sameAs": [{% for s in r.contact.social %}{{ s.url | jsonify }}{% unless forloop.last %}, {% endunless %}{% endfor %}]
+  }
+  </script>
+  <script src="{{ '/assets/js/command-menu.js' | relative_url }}" defer></script>
+</head>
+<body>
+  <main class="container relative mx-auto scroll-my-12 overflow-auto p-4 print:p-11 md:p-16" id="main-content">
+    <div class="sr-only">
+      <h1>{{ r.name }}'s Resume</h1>
+    </div>
+
+    <section class="mx-auto w-full max-w-2xl space-y-8 bg-white print:space-y-4" aria-label="Resume Content">
+
+      {%- comment -%} ================= Header ================= {%- endcomment %}
+      <div class="animate-fade-in" style="animation-delay: 0ms">
+        <header class="flex items-center justify-between">
+          <div class="flex-1 space-y-1.5">
+            <h1 class="text-3xl font-bold tracking-tight" id="resume-name">{{ r.name }}</h1>
+            <p class="max-w-md text-pretty font-mono text-sm text-foreground/80 print:text-[12px]">{{ r.about }}</p>
+
+            {%- if r.location %}
+            <p class="max-w-md items-center text-pretty font-mono text-xs text-foreground">
+              <a class="inline-flex gap-x-1.5 align-baseline leading-none hover:underline" href="{{ r.location_link }}" target="_blank" rel="noopener noreferrer" aria-label="Location: {{ r.location | escape }}">
+                <svg class="size-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+                {{ r.location }}
+              </a>
+            </p>
+            {%- endif %}
+
+            <ul class="flex list-none gap-x-1 pt-1 font-mono text-sm text-foreground/80 print:hidden" aria-label="Contact links">
+              {%- if r.contact.email %}
+              <li>
+                <a class="inline-flex size-8 items-center justify-center whitespace-nowrap rounded-md border border-input bg-background text-sm font-medium ring-offset-background transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2" href="mailto:{{ r.contact.email }}" aria-label="Email" target="_blank" rel="noopener noreferrer">
+                  <svg class="size-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                </a>
+              </li>
+              {%- endif %}
+              {%- if r.contact.tel %}
+              <li>
+                <a class="inline-flex size-8 items-center justify-center whitespace-nowrap rounded-md border border-input bg-background text-sm font-medium ring-offset-background transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2" href="tel:{{ r.contact.tel }}" aria-label="Phone" target="_blank" rel="noopener noreferrer">
+                  <svg class="size-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                </a>
+              </li>
+              {%- endif %}
+              {%- for s in r.contact.social %}
+              <li>
+                <a class="inline-flex size-8 items-center justify-center whitespace-nowrap rounded-md border border-input bg-background text-sm font-medium ring-offset-background transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2" href="{{ s.url }}" aria-label="{{ s.name | escape }}" target="_blank" rel="noopener noreferrer">
+                  {%- if s.icon == "github" %}
+                  <svg class="size-4" aria-hidden="true" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                  {%- elsif s.icon == "linkedin" %}
+                  <svg class="size-4" aria-hidden="true" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                  {%- elsif s.icon == "x" %}
+                  <svg class="size-4" aria-hidden="true" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg>
+                  {%- else %}
+                  <svg class="size-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+                  {%- endif %}
+                </a>
+              </li>
+              {%- endfor %}
+            </ul>
+
+            <div class="hidden flex-wrap gap-x-2 font-mono text-sm text-foreground/80 print:flex print:text-[12px]">
+              {%- if r.contact.email %}
+              <a class="underline hover:text-foreground/70" href="mailto:{{ r.contact.email }}">{{ r.contact.email }}</a>
+              {%- endif %}
+              {%- if r.contact.tel %}
+              <span aria-hidden="true">/</span>
+              <a class="underline hover:text-foreground/70" href="tel:{{ r.contact.tel }}">{{ r.contact.tel }}</a>
+              {%- endif %}
+              {%- for s in r.contact.social %}
+              <span aria-hidden="true">/</span>
+              <a class="underline hover:text-foreground/70" href="{{ s.url }}">{{ s.label | default: s.url }}</a>
+              {%- endfor %}
+            </div>
+          </div>
+
+          {%- if r.avatar_url or r.initials %}
+          <div class="relative flex size-28 shrink-0 overflow-hidden rounded-xl bg-muted ring-1 ring-muted">
+            <div class="absolute inset-0 flex h-full w-full items-center justify-center text-lg font-semibold">{{ r.initials }}</div>
+            {%- if r.avatar_url %}
+            <img class="relative aspect-square h-full w-full object-cover" src="{{ r.avatar_url }}" alt="{{ r.name | escape }}'s profile picture" width="112" height="112" fetchpriority="high" onerror="this.remove()">
+            {%- endif %}
+          </div>
+          {%- endif %}
+        </header>
+      </div>
+
+      <div class="space-y-8 print:space-y-4">
+
+        {%- comment -%} ================= About ================= {%- endcomment %}
+        <div class="animate-fade-in" style="animation-delay: 75ms">
+          <section class="flex min-h-0 flex-col gap-y-3 print:gap-y-1">
+            <h2 class="text-xl font-bold" id="about-section">About</h2>
+            <div class="text-pretty font-mono text-sm text-foreground/80 print:text-[12px] [&_a]:underline [&_a]:underline-offset-2 [&_a:hover]:text-foreground">{{ r.summary | markdownify | remove: '<p>' | remove: '</p>' | strip }}</div>
+          </section>
+        </div>
+
+        {%- comment -%} ================= Work Experience ================= {%- endcomment %}
+        <div class="animate-fade-in" style="animation-delay: 150ms">
+          <section class="flex min-h-0 flex-col gap-y-3 print:gap-y-1">
+            <h2 class="text-xl font-bold" id="work-experience">Work Experience</h2>
+            <div class="space-y-4 print:space-y-0" role="feed" aria-labelledby="work-experience">
+              {%- for w in r.work %}
+              {%- assign roles_count = w.roles | size %}
+              {%- assign first_role = w.roles | first %}
+              {%- assign last_role = w.roles | last %}
+              {%- assign badge_count = w.badges | size %}
+              <article>
+                <div class="rounded-lg border border-none border-muted bg-card py-1 text-card-foreground print:py-0">
+                  <div class="flex flex-col space-y-1.5 print:space-y-1">
+                    <div class="flex items-center justify-between gap-x-2 text-base">
+                      <h3 class="inline-flex flex-wrap items-center gap-x-1 font-semibold leading-none print:text-sm">
+                        {%- if w.link %}
+                        <a class="hover:underline" href="{{ w.link }}" target="_blank" rel="noopener noreferrer" aria-label="{{ w.company | escape }} company website">{{ w.company }}</a>
+                        {%- else %}
+                        <span>{{ w.company }}</span>
+                        {%- endif %}
+                        {%- if w.note %}
+                        <span class="font-mono text-xs font-normal leading-tight text-muted-foreground print:text-[10px]">({{ w.note }})</span>
+                        {%- endif %}
+                        {%- if badge_count > 0 and badge_count <= 6 %}
+                        <ul class="hidden list-none gap-x-1 p-0 sm:inline-flex" aria-label="Technologies used">
+                          {%- for b in w.badges %}
+                          <li><div class="inline-flex items-center text-nowrap rounded-md border border-transparent bg-secondary px-2 py-0.5 align-middle font-mono text-xs font-semibold text-secondary-foreground transition-colors hover:bg-secondary/60 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 print:px-1 print:py-0.5 print:text-[8px] print:leading-tight">{{ b }}</div></li>
+                          {%- endfor %}
+                        </ul>
+                        {%- endif %}
+                      </h3>
+                      <div class="shrink-0 text-sm tabular-nums text-gray-500" title="Employment period: {{ last_role.start }} to {{ first_role.end | default: 'Present' }}">{{ last_role.start }} - {{ first_role.end | default: "Present" }}</div>
+                    </div>
+                    {%- if roles_count == 1 %}
+                    <h4 class="font-mono text-sm font-semibold leading-none print:text-[12px]">{{ first_role.title }}{% if first_role.title_note %} <span class="font-normal leading-tight text-muted-foreground">({{ first_role.title_note }})</span>{% endif %}</h4>
+                    {%- endif %}
+                  </div>
+
+                  <div class="text-pretty font-mono text-sm text-muted-foreground">
+                    {%- for role in w.roles %}
+                    {%- if roles_count > 1 %}
+                    <div class="{% unless forloop.first %}mt-4 print:mt-2 {% else %}mt-2 print:mt-1 {% endunless %}flex items-center justify-between gap-x-2">
+                      <h4 class="font-mono text-sm font-semibold leading-none text-foreground print:text-[12px]">{{ role.title }}{% if role.title_note %} <span class="font-normal leading-tight text-muted-foreground">({{ role.title_note }})</span>{% endif %}</h4>
+                      <div class="shrink-0 font-sans text-sm tabular-nums text-gray-500" title="Period: {{ role.start }} to {{ role.end | default: 'Present' }}">{{ role.start }} - {{ role.end | default: "Present" }}</div>
+                    </div>
+                    {%- endif %}
+                    <div class="mt-2 text-pretty text-xs text-foreground/80 print:mt-1 print:text-[10px] [&_a]:underline [&_a]:underline-offset-2 [&_a:hover]:text-foreground">
+                      {%- if role.description %}{{ role.description | markdownify | remove: '<p>' | remove: '</p>' | strip }}{% endif %}
+                      {%- for g in role.groups %}
+                      {%- if g.heading %}
+                      <p class="{% unless forloop.first %}mt-2 print:mt-1 {% endunless %}font-semibold text-foreground">{{ g.heading }}</p>
+                      {%- endif %}
+                      <ul class="list-inside list-disc">
+                        {%- for h in g.highlights %}
+                        <li>{{ h | markdownify | remove: '<p>' | remove: '</p>' | strip }}</li>
+                        {%- endfor %}
+                      </ul>
+                      {%- endfor %}
+                    </div>
+                    {%- endfor %}
+
+                    {%- if badge_count > 0 %}
+                    <div class="mt-2">
+                      {%- if badge_count <= 6 %}
+                      <ul class="-mx-2 inline-flex list-none flex-wrap gap-1 p-0 sm:hidden" aria-label="Technologies used">
+                      {%- else %}
+                      <ul class="flex list-none flex-wrap gap-1 p-0" aria-label="Technologies used">
+                      {%- endif %}
+                        {%- for b in w.badges %}
+                        <li><div class="inline-flex items-center text-nowrap rounded-md border border-transparent bg-secondary px-2 py-0.5 align-middle font-mono text-xs font-semibold text-secondary-foreground transition-colors hover:bg-secondary/60 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 print:px-1 print:py-0.5 print:text-[8px] print:leading-tight">{{ b }}</div></li>
+                        {%- endfor %}
+                      </ul>
+                    </div>
+                    {%- endif %}
+                  </div>
+                </div>
+              </article>
+              {%- endfor %}
+            </div>
+          </section>
+        </div>
+
+        {%- comment -%} ================= Education ================= {%- endcomment %}
+        <div class="animate-fade-in" style="animation-delay: 225ms">
+          <section class="flex min-h-0 flex-col gap-y-3 print:gap-y-1">
+            <h2 class="text-xl font-bold" id="education-section">Education</h2>
+            <div class="space-y-4" role="feed" aria-labelledby="education-section">
+              {%- for e in r.education %}
+              <article>
+                <div class="rounded-lg border border-none border-muted bg-card text-card-foreground">
+                  <div class="flex flex-col space-y-1.5">
+                    <div class="flex items-center justify-between gap-x-2 text-base">
+                      <h3 class="font-semibold leading-none" id="education-{{ forloop.index }}">{{ e.school }}</h3>
+                      <div class="shrink-0 text-sm tabular-nums text-gray-500" title="Period: {{ e.start }} to {{ e.end }}">{{ e.start }} - {{ e.end }}</div>
+                    </div>
+                  </div>
+                  <div class="mt-2 text-pretty font-mono text-sm text-foreground/80 print:text-[12px]" aria-labelledby="education-{{ forloop.index }}">{{ e.degree }}</div>
+                </div>
+              </article>
+              {%- endfor %}
+            </div>
+          </section>
+        </div>
+
+        {%- comment -%} ================= Skills ================= {%- endcomment %}
+        <div class="animate-fade-in" style="animation-delay: 300ms">
+          <section class="flex min-h-0 flex-col gap-y-3 print:gap-y-1">
+            <h2 class="text-xl font-bold" id="skills-section">Skills</h2>
+            <div class="space-y-3 print:space-y-1.5">
+              {%- for group in r.skills %}
+              <div class="space-y-1.5 print:space-y-1">
+                <h3 class="font-mono text-xs font-semibold text-foreground/80 print:text-[10px]">{{ group.category }}</h3>
+                <ul class="flex list-none flex-wrap gap-1 p-0" aria-label="{{ group.category | escape }}">
+                  {%- for skill in group.items %}
+                  <li><div class="inline-flex items-center text-nowrap rounded-md border border-transparent bg-primary/80 px-2 py-0.5 font-mono text-xs font-semibold text-primary-foreground transition-colors hover:bg-primary/60 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 print:text-[10px]" aria-label="Skill: {{ skill | escape }}">{{ skill }}</div></li>
+                  {%- endfor %}
+                </ul>
+              </div>
+              {%- endfor %}
+            </div>
+          </section>
+        </div>
+
+        {%- comment -%} ================= Projects ================= {%- endcomment %}
+        {%- assign project_count = r.projects | size %}
+        {%- if project_count > 0 %}
+        <div class="animate-fade-in" style="animation-delay: 375ms">
+          <section class="flex min-h-0 scroll-mb-16 flex-col gap-y-3 print:gap-y-1 print:space-y-4">
+            <h2 class="text-xl font-bold" id="side-projects">{{ r.projects_title | default: "Side projects" }}</h2>
+            {%- if project_count == 1 %}
+            <div class="-mx-3 grid grid-cols-1 gap-3 print:gap-2" role="feed" aria-labelledby="side-projects">
+            {%- else %}
+            <div class="-mx-3 grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-3 print:grid-cols-3 print:gap-2" role="feed" aria-labelledby="side-projects">
+            {%- endif %}
+              {%- for p in r.projects %}
+              <article class="h-full transition-all duration-200 hover:-translate-y-0.5 hover:shadow-sm print:break-inside-avoid print:hover:translate-y-0 print:hover:shadow-none">
+                <div class="flex h-full flex-col overflow-hidden rounded-lg border border-muted bg-card p-3 text-card-foreground">
+                  <div class="flex flex-col space-y-1.5">
+                    <div class="space-y-1">
+                      <h3 class="flex items-center justify-between gap-x-2 text-base font-semibold leading-none tracking-tight">
+                        {%- if p.link %}
+                        <span>
+                          <a class="inline-flex items-center gap-1 hover:underline" href="{{ p.link }}" target="_blank" rel="noopener noreferrer" aria-label="{{ p.title | escape }} project (opens in new tab)">{{ p.title }}<span class="size-1 rounded-full bg-green-500" title="Active project indicator" aria-hidden="true"></span></a>
+                          <span class="hidden font-mono text-xs underline print:inline" aria-hidden="true">{{ p.link | remove: "https://" | remove: "www." }}</span>
+                        </span>
+                        {%- else %}
+                        <span>{{ p.title }}{% if p.note %} <span class="font-mono text-xs font-normal text-muted-foreground">({{ p.note }})</span>{% endif %}</span>
+                        {%- endif %}
+                        {%- if p.year %}
+                        <span class="shrink-0 text-sm font-normal tabular-nums tracking-normal text-gray-500">{{ p.year }}</span>
+                        {%- endif %}
+                      </h3>
+                      <div class="text-pretty font-mono text-xs text-foreground print:text-[10px] [&_a]:underline [&_a]:underline-offset-2 [&_a:hover]:text-foreground" aria-label="Project description">
+                        {%- if p.description %}{{ p.description | markdownify | remove: '<p>' | remove: '</p>' | strip }}{% endif %}
+                        {%- if p.highlights %}
+                        <ul class="list-inside list-disc text-foreground/80">
+                          {%- for h in p.highlights %}
+                          <li>{{ h | markdownify | remove: '<p>' | remove: '</p>' | strip }}</li>
+                          {%- endfor %}
+                        </ul>
+                        {%- endif %}
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mt-auto flex text-pretty font-mono text-sm text-muted-foreground">
+                    <ul class="mt-2 flex list-none flex-wrap gap-1 p-0" aria-label="Technologies used">
+                      {%- for t in p.tech_stack %}
+                      <li><div class="inline-flex items-center text-nowrap rounded-md border border-transparent bg-secondary px-1 py-0 font-mono text-[10px] font-semibold text-secondary-foreground transition-colors hover:bg-secondary/60 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 print:px-1 print:py-0.5 print:text-[8px] print:leading-tight">{{ t }}</div></li>
+                      {%- endfor %}
+                    </ul>
+                  </div>
+                </div>
+              </article>
+              {%- endfor %}
+            </div>
+          </section>
+        </div>
+        {%- endif %}
+
+        {%- comment -%} ================= Awards ================= {%- endcomment %}
+        {%- if r.awards %}
+        <div class="animate-fade-in" style="animation-delay: 450ms">
+          <section class="flex min-h-0 flex-col gap-y-3 print:gap-y-1">
+            <h2 class="text-xl font-bold" id="awards-section">Awards &amp; Achievements</h2>
+            <ul class="list-inside list-disc text-pretty font-mono text-sm text-foreground/80 print:text-[12px] [&_a]:underline [&_a]:underline-offset-2 [&_a:hover]:text-foreground" aria-labelledby="awards-section">
+              {%- for a in r.awards %}
+              <li>{{ a | markdownify | remove: '<p>' | remove: '</p>' | strip }}</li>
+              {%- endfor %}
+            </ul>
+          </section>
+        </div>
+        {%- endif %}
+      </div>
+    </section>
+
+    {%- comment -%} ================= Command menu (Ctrl/Cmd + J) ================= {%- endcomment %}
+    <nav class="print:hidden" aria-label="Quick navigation">
+      <p class="fixed bottom-0 left-0 right-0 hidden bg-gradient-to-t from-[hsl(var(--background))] to-transparent p-1 pt-6 text-center text-sm text-muted-foreground xl:block print:hidden">
+        Press
+        <kbd class="pointer-events-none inline-flex h-5 select-none items-center gap-1 rounded border bg-muted px-1.5 font-mono text-[10px] font-medium text-muted-foreground opacity-100"><span class="text-xs" data-cmd-key>⌘</span>+J</kbd>
+        to open the command menu
+      </p>
+      <button type="button" data-cmd-trigger aria-label="Open command menu" class="fixed bottom-4 right-4 flex h-10 w-10 items-center justify-center whitespace-nowrap rounded-full border border-input bg-background text-sm font-medium shadow-2xl ring-offset-background transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 xl:hidden print:hidden">
+        <svg class="my-6 size-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6v12a3 3 0 1 0 3-3H6a3 3 0 1 0 3 3V6a3 3 0 1 0-3 3h12a3 3 0 1 0-3-3"/></svg>
+      </button>
+
+      <div id="cmd-dialog" hidden>
+        <div data-cmd-overlay data-state="closed" class="fixed inset-0 z-50 bg-black/20 data-[state=closed]:animate-out data-[state=open]:animate-in data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 print:hidden"></div>
+        <div data-cmd-content data-state="closed" role="dialog" aria-modal="true" aria-label="Command menu" class="fixed left-[50%] top-[50%] z-50 grid w-full max-w-lg translate-x-[-50%] translate-y-[-50%] gap-4 overflow-hidden border bg-background p-0 shadow-lg duration-200 data-[state=closed]:animate-out data-[state=open]:animate-in data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[state=closed]:slide-out-to-left-1/2 data-[state=closed]:slide-out-to-top-[48%] data-[state=open]:slide-in-from-left-1/2 data-[state=open]:slide-in-from-top-[48%] sm:rounded-lg print:hidden">
+          <div class="flex h-full w-full flex-col overflow-hidden rounded-md bg-popover text-popover-foreground">
+            <div class="flex items-center border-b px-3">
+              <svg class="mr-2 h-5 w-5 shrink-0 opacity-50" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+              <input data-cmd-input type="text" autocomplete="off" spellcheck="false" placeholder="Type a command or search..." aria-label="Type a command or search" class="flex h-12 w-full rounded-md bg-transparent py-3 text-sm outline-none placeholder:text-muted-foreground disabled:cursor-not-allowed disabled:opacity-50">
+            </div>
+            <div class="max-h-[300px] overflow-y-auto overflow-x-hidden" role="listbox">
+              <div data-cmd-empty hidden class="py-6 text-center text-sm">No results found.</div>
+              <div data-cmd-group class="overflow-hidden px-2 py-1 text-foreground">
+                <div class="px-2 py-1.5 text-xs font-medium text-muted-foreground">Actions</div>
+                <div data-cmd-item data-action="print" role="option" aria-selected="false" class="relative flex cursor-default select-none items-center rounded-sm px-2 py-3 text-sm outline-none aria-selected:bg-accent aria-selected:text-accent-foreground"><span>Print</span></div>
+              </div>
+              <div data-cmd-group class="overflow-hidden px-2 pb-1 text-foreground">
+                <div class="px-2 py-1.5 text-xs font-medium text-muted-foreground">Links</div>
+                {%- for s in r.contact.social %}
+                <div data-cmd-item data-url="{{ s.url }}" role="option" aria-selected="false" class="relative flex cursor-default select-none items-center rounded-sm px-2 py-3 text-sm outline-none aria-selected:bg-accent aria-selected:text-accent-foreground"><span>{{ s.name }}</span></div>
+                {%- endfor %}
+              </div>
+              <div class="-mx-1 h-px bg-border"></div>
+            </div>
+          </div>
+          <button type="button" data-cmd-close class="absolute right-4 top-4 rounded-sm opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2">
+            <svg class="h-4 w-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+            <span class="sr-only">Close</span>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </main>
+</body>
+</html>
