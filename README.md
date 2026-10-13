@@ -1,10 +1,11 @@
 # Vineet Kumar
 **Senior Software Engineer | Technical Leader**
 
-[linkedin.com/in/vineetkch](https://www.linkedin.com/in/vineetkch) | [github.com/vineetk1998](https://github.com/vineetk1998) | vinetchoudhary@gmail.com 
+[linkedin.com/in/vineetkch](https://www.linkedin.com/in/vineetkch) | [github.com/vineetk1998](https://github.com/vineetk1998)  
+vinetchoudhary@gmail.com | +91-9001936749
 
 ## Professional Summary
-Senior full-stack engineer with 7+ years owning product, platform and the infrastructure behind them. At myHQ, ran the vendor ecosystem connecting users to 20+ workspace providers behind 50K+ monthly bookings, and owned reliability, observability and security org-wide, cutting MTTR from hours to minutes and log costs by 80%. At Cuebook, owned the ML-driven anomaly detection engine delivering automated root-cause analysis at 95% accuracy. Builds AI-first, directing coding agents and owning what ships, gated by review, tests and CI. Mentored 6+ engineers, 3 promoted to senior roles.
+Senior full-stack engineer with 7+ years owning product, platform and the infrastructure behind them. At myHQ, ran the vendor ecosystem connecting users to 20+ workspace providers behind 50K+ monthly bookings, and owned reliability, observability and security org-wide, cutting MTTR from hours to minutes and log costs by 80%. At Cuefact, owned the ML-driven anomaly detection engine delivering automated root-cause analysis at 95% accuracy. Builds AI-first, directing coding agents and owning what ships, gated by review, tests and CI. Mentored 6+ engineers, 3 promoted to senior roles.
 
 
 ---
@@ -34,7 +35,7 @@ Senior full-stack engineer with 7+ years owning product, platform and the infras
 
 **Stack:** TypeScript, Node.js, Express.js, AWS (EC2, Lambda, S3, Bedrock, Polly, CloudWatch), Docker, MongoDB, Redis, Elasticsearch, BullMQ, Elastic APM, Kibana, CI/CD
 
-#### Senior Software Engineer <span style="float:right; font-weight:normal; font-style:italic">Apr 2022 – Jul 2025</span>
+#### SDE III <span style="float:right; font-weight:normal; font-style:italic">Jul 2022 – Jul 2025</span>
 
 *Technical Leadership & System Architecture*
 * Owned vendor integration architecture across 20+ partner APIs, standardizing resilience and onboarding for a fragmented partner ecosystem. Chose a common adapter layer over one-off integrations to improve maintainability and operational consistency. Cut onboarding time by 85%, reduced integration defects by 95%, and sustained under 0.1% booking failures across 50K+ monthly transactions.
@@ -42,7 +43,7 @@ Senior full-stack engineer with 7+ years owning product, platform and the infras
 
 *Reliability, Observability & Infrastructure*
 * Owned production health visibility across internal and vendor systems. Prior monitoring was manual and reactive, so I built a config-driven synthetic monitoring platform with built-in auth, scheduling, retries, alerting, and dashboards. This shifted issue discovery from reactive to proactive, cutting MTTR from hours to minutes.
-* Owned CI/CD pipelines across all application and infrastructure services with rolling deployments, health checks, and automated rollback, reducing deployment downtime from 3+ incidents/week to near-zero.
+* Owned CI/CD pipelines across all application and infrastructure services with blue-green deployments that cut over via Nginx reload only after health checks passed, reducing deployment downtime from 3+ incidents/week to near-zero.
 * Owned observability across vendor, external, and internal services on a core API serving ~1M requests/day, instrumenting Elastic APM with custom DB and cache spans, adding distributed tracing, and optimizing CloudWatch indexing. This exposed latency and failure patterns earlier, cut log costs by 80%, and brought p95 below 1s.
 * Owned reliability of core data infrastructure as the sole DevOps engineer, operating MongoDB with sharding, replica sets, and PITR, alongside Elasticsearch, Redis, and BullMQ. Added automated backup and restore drills, enabling production failovers with zero data loss.
 
@@ -57,11 +58,11 @@ Senior full-stack engineer with 7+ years owning product, platform and the infras
 
 ---
 
-### Cuebook *(B2B SaaS analytics / BI)*
+### Cuefact *(formerly Cuebook, B2B SaaS analytics / BI)*
 
 **Stack:** Python, Django, JavaScript/TypeScript, React.js, AWS (EC2, Lambda, S3), EKS, Kubernetes, Docker, PostgreSQL, Redis, Celery, Elasticsearch, Druid, Prometheus, Grafana, CI/CD
 
-#### Lead Software Engineer <span style="float:right; font-weight:normal; font-style:italic">Apr 2021 – Mar 2022</span>
+#### Lead Software Engineer <span style="float:right; font-weight:normal; font-style:italic">Apr 2021 – Jun 2022</span>
 * Led the 4-engineer open-source release of [CueObserve](https://github.com/cuebook/CueObserve) (SQL-native anomaly detection), choosing self-hostable over managed for lightweight adoption, earning 200+ GitHub stars.
 * Designed and implemented a cloud engineering system for automated scaling, improving maintainability by 2 grades and reducing operational overhead by 40%.
 * Built CI/CD pipelines with GitHub Actions, increasing automated test coverage by 60% and reducing deployment time by 50%.
