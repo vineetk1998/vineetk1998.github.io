@@ -1,0 +1,314 @@
+# Resume content for https://vineetk1998.github.io
+# Edit this file to update the site. index.html turns it into the page.
+# Text fields accept Markdown links, e.g. [naxatar.com](https://naxatar.com).
+
+name: Vineet Kumar
+initials: VK
+about: Senior Software Engineer | Technical Leader
+avatar_url: https://github.com/vineetk1998.png?size=224
+# location: Bengaluru, India          # optional, shows a globe link under the title
+# location_link: https://www.google.com/maps/place/Bengaluru
+
+summary: >-
+  Senior full-stack engineer with 7+ years owning product, platform and the
+  infrastructure behind them. At myHQ, ran the vendor ecosystem connecting users
+  to 20+ workspace providers behind 50K+ monthly bookings, and owned reliability,
+  observability and security org-wide, cutting MTTR from hours to minutes and log
+  costs by 80%. At Cuefact, owned the ML-driven anomaly detection engine
+  delivering automated root-cause analysis at 95% accuracy. Builds AI-first,
+  directing coding agents and owning what ships, gated by review, tests and CI.
+  Mentored 6+ engineers, 3 promoted to senior roles.
+
+contact:
+  email: vinetchoudhary@gmail.com
+  tel: "+91-9001936749"
+  social:
+    - name: GitHub
+      url: https://github.com/vineetk1998
+      label: github.com/vineetk1998
+      icon: github
+    - name: LinkedIn
+      url: https://www.linkedin.com/in/vineetkch
+      label: linkedin.com/in/vineetkch
+      icon: linkedin
+
+# Newest first. A company can hold several roles (newest first).
+# "badges" are the tech-stack tags shown for the company.
+work:
+  - company: Independent
+    badges:
+      - TypeScript
+      - Node.js
+      - Express
+      - Next.js
+      - PostgreSQL
+      - Substrate/Polkadot API
+      - Supabase
+      - Cloudflare Workers
+    roles:
+      - title: Independent Software Engineer
+        title_note: self-directed product & infrastructure work
+        start: Jun 2025
+        end: Present
+        groups:
+          - highlights:
+              - >-
+                Indexed the Avail blockchain's history — raw chain data decoded
+                into several hundred GB of PostgreSQL — as a solo project (public
+                on my GitHub), served through a REST API and a React/Next.js
+                analytics dashboard. Ran a self-hosted full node when public RPC
+                rate limits bottlenecked the multi-day backfills, which were built
+                for crash-safe, checkpointed resume.
+              - >-
+                Shipped and run Playlist Wrangler, a browser extension live on the
+                Chrome, Firefox, and Edge stores, two production sites on Supabase
+                and Cloudflare Workers under my studio,
+                [naxatar.com](https://naxatar.com), and ClipPal, a macOS clipboard
+                manager in Python with 2,600+ pytest tests gated in CI.
+
+  - company: myHQ
+    note: flexible-workspace marketplace, an ANAROCK company
+    badges:
+      - TypeScript
+      - Node.js
+      - Express.js
+      - AWS (EC2, Lambda, S3, Bedrock, Polly, CloudWatch)
+      - Docker
+      - MongoDB
+      - Redis
+      - Elasticsearch
+      - BullMQ
+      - Elastic APM
+      - Kibana
+      - CI/CD
+    roles:
+      - title: SDE III
+        start: Jul 2022
+        end: Jul 2025
+        groups:
+          - heading: Technical Leadership & System Architecture
+            highlights:
+              - >-
+                Owned vendor integration architecture across 20+ partner APIs,
+                standardizing resilience and onboarding for a fragmented partner
+                ecosystem. Chose a common adapter layer over one-off integrations
+                to improve maintainability and operational consistency. Cut
+                onboarding time by 85%, reduced integration defects by 95%, and
+                sustained under 0.1% booking failures across 50K+ monthly
+                transactions.
+              - >-
+                Led the shift from email-based vendor operations to a governed
+                maker-checker platform, standardizing how approval workflows were
+                added across teams. Supported 5+ operation types with role-based
+                approvals, state validation, and auditability, processing 1000s of
+                monthly operations.
+          - heading: Reliability, Observability & Infrastructure
+            highlights:
+              - >-
+                Owned production health visibility across internal and vendor
+                systems. Prior monitoring was manual and reactive, so I built a
+                config-driven synthetic monitoring platform with built-in auth,
+                scheduling, retries, alerting, and dashboards. This shifted issue
+                discovery from reactive to proactive, cutting MTTR from hours to
+                minutes.
+              - >-
+                Owned CI/CD pipelines across all application and infrastructure
+                services with blue-green deployments that cut over via Nginx
+                reload only after health checks passed, reducing deployment
+                downtime from 3+ incidents/week to near-zero.
+              - >-
+                Owned observability across vendor, external, and internal services
+                on a core API serving ~1M requests/day, instrumenting Elastic APM
+                with custom DB and cache spans, adding distributed tracing, and
+                optimizing CloudWatch indexing. This exposed latency and failure
+                patterns earlier, cut log costs by 80%, and brought p95 below 1s.
+              - >-
+                Owned reliability of core data infrastructure as the sole DevOps
+                engineer, operating MongoDB with sharding, replica sets, and PITR,
+                alongside Elasticsearch, Redis, and BullMQ. Added automated backup
+                and restore drills, enabling production failovers with zero data
+                loss.
+          - heading: Security & Compliance
+            highlights:
+              - >-
+                Hardened security by enforcing CASL least-privilege at the
+                repository layer, TLS across all inter-service communication, RBAC
+                policies, and AWS Secrets Manager, addressing 90% of identified
+                vulnerability surface.
+              - >-
+                Established org-wide compliance foundations, enforcing PII-safe
+                logging standards via ESLint across all services, building an
+                automated PII redaction pipeline over all log files, and
+                implementing IAM-gated access to sensitive logs, reducing PII data
+                exposure by 95%.
+          - heading: Engineering Culture & Mentorship
+            highlights:
+              - >-
+                Influenced engineering practices across teams by introducing
+                standardized design reviews, CI enforcement, and observability
+                patterns, improving consistency and reducing defects by 25%.
+              - >-
+                Mentored engineers on system design, tradeoffs, and failure modes,
+                enabling independent ownership of critical services and 3
+                promotions to senior roles.
+              - >-
+                Codified incident learnings into automated safeguards (runbooks,
+                alerts, failure pattern detection), reducing repeat production
+                issues.
+
+  - company: Cuefact
+    note: formerly Cuebook, B2B SaaS analytics / BI
+    badges:
+      - Python
+      - Django
+      - JavaScript/TypeScript
+      - React.js
+      - AWS (EC2, Lambda, S3)
+      - EKS
+      - Kubernetes
+      - Docker
+      - PostgreSQL
+      - Redis
+      - Celery
+      - Elasticsearch
+      - Druid
+      - Prometheus
+      - Grafana
+      - CI/CD
+    roles:
+      - title: Lead Software Engineer
+        start: Apr 2021
+        end: Jun 2022
+        groups:
+          - highlights:
+              - >-
+                Led the 4-engineer open-source release of
+                [CueObserve](https://github.com/cuebook/CueObserve) (SQL-native
+                anomaly detection), choosing self-hostable over managed for
+                lightweight adoption, earning 200+ GitHub stars.
+              - >-
+                Designed and implemented a cloud engineering system for automated
+                scaling, improving maintainability by 2 grades and reducing
+                operational overhead by 40%.
+              - >-
+                Built CI/CD pipelines with GitHub Actions, increasing automated
+                test coverage by 60% and reducing deployment time by 50%.
+              - >-
+                Contributed to Spark-based ELT pipelines over Apache Iceberg,
+                enabling scalable lakehouse ingestion and transformation of 10M+
+                records/day via Zeppelin-driven workflows.
+      - title: Founding Software Engineer
+        start: Nov 2019
+        end: Mar 2021
+        groups:
+          - highlights:
+              - >-
+                Designed CueL, a DAG-based query planner covering the three analyst
+                workflows (top-N, comparison, time-series), cutting query
+                complexity by 70% versus hand-written SQL.
+              - >-
+                Architected a parallel anomaly detection service in Python over
+                Django REST and Celery, fanning work to AWS Lambda to process 10M+
+                time-series evaluations daily, achieving 95% accuracy in automated
+                root cause analysis.
+              - >-
+                Implemented Elasticsearch & ranking algorithm based on user
+                interaction patterns, metric importance, and configuration,
+                improving search relevance by 80%.
+              - >-
+                Developed k-means clustering-based segmentation of metrics for
+                automated analysis, reducing manual analysis time by 60%.
+
+  - company: Alpha Tech StartUp
+    roles:
+      - title: Founder
+        start: May 2019
+        end: Oct 2019
+        groups:
+          - highlights:
+              - >-
+                Founded and built a SaaS ERP for educational institutions (React,
+                Redux, Firebase), onboarding 2 institutions and 1,000+ students in
+                6 months.
+
+education:
+  - school: National Institute of Technology, Patna
+    degree: Bachelor of Technology (B.Tech), Information Technology
+    start: "2015"
+    end: "2019"
+
+skills:
+  - category: Languages & Frameworks
+    items:
+      - Node.js
+      - JavaScript/TypeScript
+      - React.js
+      - Python
+      - Express.js
+      - Django
+      - LangChain
+      - LangGraph
+  - category: Infrastructure & Cloud
+    items:
+      - AWS (EC2, Lambda, S3, EKS, Bedrock, Polly, CloudWatch)
+      - Docker
+      - Kubernetes
+      - CI/CD (GitHub Actions)
+  - category: Databases & Messaging
+    items:
+      - MongoDB
+      - PostgreSQL
+      - Redis
+      - Elasticsearch
+      - BullMQ
+      - Celery
+      - Druid
+  - category: Reliability & Observability
+    items:
+      - Distributed tracing (Elastic APM)
+      - structured logging
+      - PII redaction
+      - synthetic monitoring
+      - alerting
+      - runbooks
+      - Prometheus
+      - Grafana
+      - Kibana
+      - CloudWatch
+  - category: Architecture & Patterns
+    items:
+      - Distributed Systems
+      - Microservices
+      - Event-Driven Architecture
+      - RESTful APIs
+      - System Design
+
+projects_title: Projects & Open Source
+projects:
+  - title: AI Sales Training Platform
+    note: myHQ Hackathon
+    year: "2025"
+    tech_stack:
+      - LangChain
+      - LangGraph
+      - AWS Bedrock
+      - AWS Polly
+      - XGBoost
+      - SHAP
+    highlights:
+      - >-
+        Led a team of 6, covering SOP ingestion, AWS Bedrock-driven course and
+        quiz generation, a LangGraph-managed 4-stage buyer simulation (Discovery,
+        Proposal, Objection Handling, Closing) driven by structured system
+        prompts, and AWS Polly voice output.
+      - >-
+        Architected the production roadmap: LangChain RAG for retrieval, a local
+        XGBoost model whose SHAP feature importances feed the prompt as
+        company-specific conversion signals, and optional fine-tuning.
+
+awards:
+  - Technical Excellence Award at myHQ for implementing system health check service (2023)
+  - >-
+    Published [*Ensuring Food Safety Through
+    Blockchain*](https://www.researchgate.net/publication/344001218_Ensuring_Food_Safety_Through_Blockchain)
+    in ICACC (2019)
